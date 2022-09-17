@@ -3,16 +3,20 @@
    margin: 0;
    box-sizing: border-box;
    font-family: 'Rubik', sans-serif;
+   overflow-x: hidden;
 }
+html{
+   height: 100%;
+}
+
 body{
    background-color: rgb(255, 255, 255) ;
-   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
+   height: 100%;
 }
-body::before{
+.background-shape{
+   height: 100%;
+}
+.background-shape::before{
    content: "";
    width: 80vh;
    height:85vh ;
@@ -25,7 +29,7 @@ body::before{
 
 
 }
-html::before{
+.background-shape::after{
    content: "";
    width: 80vh;
    height:85vh ;
@@ -38,10 +42,12 @@ html::before{
    
 }
 .main-container{
+   width: fit-content;
    display: flex;
    justify-content: center;
    align-items: center;
-   margin: 2rem 0 ;
+   margin: 15vh auto;
+   padding: 1rem;
    position: relative;
    z-index:3;
 }
@@ -65,6 +71,7 @@ html::before{
    border-radius: 45px;
    order: 1;
    position: relative;
+   box-shadow:0 0 10px 8px rgba(0, 0, 0, 0.2)  ;
    
 }
 .phone::after{
@@ -215,7 +222,7 @@ font-size:10px;
    right: 0;
 }
 .op-text{
-   /* margin-left: 20px; */
+  
    position: absolute;
    top:15px ;
    left:35px ;
@@ -293,13 +300,25 @@ top: 5px;
 }
 @media (max-width:900px) {
    
+   html{
+      height: 100%;
+      
+   }
+   
+   body{
+      background-color: rgb(255, 255, 255) ;
+      height: 100%;
+     
+   }
+   .background-shape{
+      height: 100%; 
+   }
    .main-container{
       display: grid;
       grid-template-columns: 1fr;
       justify-content: center;
       align-items: center;
-   margin-top: 50vh;
-   margin-bottom: 50vh;
+   
    }
 .main-text{
    width: 300px;
@@ -309,5 +328,30 @@ top: 5px;
 }
 .phone{
    margin-bottom: 4rem;
+}
+.background-shape::before{
+   content: "";
+   width: 40vh;
+   height:45vh ;
+   background-color: hsl(264, 100%, 61%);
+   position: absolute;
+   top: 0;
+   left:-25vh;
+   z-index:1;
+   border-radius: 0 0 50% 50%;
+
+
+}
+.background-shape::after{
+   content: "";
+   width: 40vh;
+   height:45vh ;
+   background-color: hsl(270, 20%, 96%);
+   position: absolute;
+   bottom:  0;
+   right:-25vh;
+   border-radius: 50% 50% 0 0;
+   z-index:1;
+   
 }
 }
