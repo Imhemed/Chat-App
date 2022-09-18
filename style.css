@@ -14,7 +14,8 @@ body{
    height: 100%;
 }
 .background-shape{
-   height: 100%;
+   height: fit-content;
+   position: relative;
 }
 .background-shape::before{
    content: "";
@@ -311,7 +312,7 @@ top: 5px;
      
    }
    .background-shape{
-      height: 100%; 
+      height: fit-content
    }
    .main-container{
       display: grid;
