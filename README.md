@@ -2,7 +2,7 @@
 
 My first attempt at building an app layout
 
-**### The challenge**
+### ** The challenge**
 
 The challenge was provided by Front-end mentor
 
@@ -24,6 +24,7 @@ I learned how to :
 - make a custom radio button
 - how to add shadows
 - how to use position relative and absolute
+- how to make animations
 - how to debug code and finds the errors and how to correct them
 
 ### **Continued development**
