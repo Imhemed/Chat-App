@@ -2,7 +2,7 @@
 
 My first attempt at building an app layout
 
-### ** The challenge**
+### **The Challenge**
 
 The challenge was provided by Front-end mentor
 
@@ -22,10 +22,10 @@ of course, it will work on desktop and mobile view
 I learned how to :
 
 - make a custom radio button
-- how to add shadows
-- how to use position relative and absolute
-- how to make animations
-- how to debug code and finds the errors and how to correct them
+-  add shadows
+-  use position relative and absolute
+-  make animations
+-  debug code and finds the errors and how to correct them
 
 ### **Continued development**
 
